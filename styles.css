@@ -1,7 +1,13 @@
 body{
-    background-color: gray;
+    background-color: white;
 }
 
 h1{
     color: white;
+}
+
+.big-title{
+    font-size: 10rem;
+    color: aqua;
+    font-family: cursive;
 }

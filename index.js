@@ -1,6 +1,10 @@
 //  jQuery can be written in diferent format like "$() or jQuery() format"
+//console.log($("h1").css("color"));
+
+//changing the size and color of websiye using jQuery
+// $("h1").css("font-size", "5rem");
+// $("h1").css("color", "red");
 
 
-$("h1").css("color", "green");
-
-console.log($("h1").css("color"));
+//this code adds a class to the h1 element in the html file 
+$("h1").addClass("big-title");
