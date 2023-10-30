@@ -14,3 +14,6 @@ $("h1").removeClass("big-title");
 
 //this code adds multiple classes to the h1 element in the html file 
 $("h1").addClass("big-title back-color t-size");
+
+//to check for the existence of a certain type of class
+console.log($("h1").hasClass("t-size"));
