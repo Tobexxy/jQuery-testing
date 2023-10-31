@@ -35,6 +35,24 @@ $("a").attr("href", "https://www.youtube.com/");
 $("a").attr("href");
 
 // adding event listener in jQuery
-$("h1").click(function() {
-    
+//click
+$("button").click(function() {
+    $("h1").css("color", "red");
 })
+// keypress
+$("input").keypress(function(event) {
+    console.log(event.key);
+    $("h1").css("color", "red");
+});
+
+// to display what was clicked
+$(document).keypress(function(event) {
+    console.log(event.key);
+    $("h1").text(event.key);
+});
+
+// detecting mouse hover the h1 tag |||| "on" can be used for multiple things
+$("h1").on("mouseover", function() {
+
+    $("h1").css("color", "purple");
+});
