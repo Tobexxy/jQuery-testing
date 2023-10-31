@@ -56,3 +56,65 @@ $("h1").on("mouseover", function() {
 
     $("h1").css("color", "purple");
 });
+
+
+// ADDING html elements the h1 tag
+//BEFORE outside the html tag elemnt
+$("h1").before("<h2>color</h2>");
+
+//AFTER outside the html tag elemnt
+$("h1").after("<button>click</button>");
+
+//LEFT inside the html tag elemnt
+$("h1").prepend("<button>color</button>");
+
+//RIGHT inside the html tag elemnt
+$("h1").append("<button>color</button>");
+
+
+//website effect animation with jQuery
+
+//to hide and show the h1 element everytime the button is clicked
+$("button").on("click", function() {
+    $("h1").toggle();
+})
+
+//fading and out effect
+$("button").on("click", function() {
+    $("h1").fadeOut();
+})
+
+$("button").on("click", function() {
+    $("h1").fadeIn();
+})
+// toggle the fade effect
+$("button").on("click", function() {
+    $("h1").fadeToggle();
+})
+
+
+// sliding animation effects
+$("button").on("click", function() {
+    $("h2").slideUp();
+})
+
+$("button").on("click", function() {
+    $("h1").slideDown();
+})
+
+$("button").on("click", function() {
+    $("h2").slideToggle();
+})
+
+//to animate
+$("button").on("click", function() {
+    $("h2").animate({opacity: 0.5});
+})
+
+//combining the all the codes to animate 
+$("button").on("click", function() {
+    $("h2").slideUp().slideDown().animate({opacity: 0.5});
+})
+
+
+
